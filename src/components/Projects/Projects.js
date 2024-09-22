@@ -6,6 +6,7 @@ import finguard from "../../Assets/Projects/FinGuard.jpg";
 import quizzical from "../../Assets/Projects/QuizzicalPic.jpg";
 import EnigmaCoin from "../../Assets/Projects/EnigmaCoin.png";
 import neurotech from "../../Assets/Projects/Neurotech.webp";
+import WordPlay from "../../Assets/Projects/WordPlay.png";
 
 function Projects() {
   return (
@@ -38,6 +39,17 @@ function Projects() {
               description="BCI Lock System employs a combination of jaw clenches, focus levels, and eye blinks by analyzing patterns derived from these inputs, the system can accurately identify an authorized user and grant or deny access accordingly."
               ghLink="https://github.com/Neurotech-Davis/CerebralSecure"
               // demoLink="https://github.com/Neurotech-Davis/CerebralSecure"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={WordPlay}
+              isBlog={false}
+              title="WordPlay"
+              description="WordPlay is an AI-powered platformer game that turns dull vocabulary lessons into interactive learning experiences, where students can use their imagination to bring their ideas to life in-game, creating endless possibilities for creative exploration and problem-solving as they engage with educational concepts in dynamic and playful ways."
+              ghLink="https://github.com/WordPlayEducation"
+              // demoLink="https://github.com/SacHacks5-0/App"
             />
           </Col>
 
