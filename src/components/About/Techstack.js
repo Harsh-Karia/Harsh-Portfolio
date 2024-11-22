@@ -4,7 +4,6 @@ import { CgCPlusPlus } from "react-icons/cg";
 import {
   DiJavascript1,
   DiReact,
-  DiMongodb,
   DiPython,
   DiGit,
   DiJava,
@@ -12,10 +11,18 @@ import {
 import {
   SiFirebase
 } from "react-icons/si";
+// import { deviconPytorchPlain } from 'react-icons-kit/devicon/devicon-pytorch-plain';
+
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiPython />
+      </Col>
+      {/* <Col xs={4} md={2} className="tech-icons">
+        <deviconPytorchPlain />
+      </Col> */}
       <Col xs={4} md={2} className="tech-icons">
         <CgCPlusPlus />
       </Col>
@@ -26,16 +33,10 @@ function Techstack() {
         <DiReact />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
         <DiGit />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiFirebase />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiJava />

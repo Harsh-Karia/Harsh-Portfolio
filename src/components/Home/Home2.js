@@ -17,31 +17,31 @@ function Home2() {
               Here's more <span className="purple"> ABOUT </span> ME
             </h1>
             <p className="home-about-body">
-              Recently, I discovered a passion for computer science so I decided to explore my interest. 🤷‍♂️
+              Hi there! I am Harsh Karia, a third year computer science student at UC Davis. I love to build personal projects. You can head over to my projects section to see some of my projects in action.
               <br />
-              <br />I have proficiency in 
+              <br />So far, I have built up proficiency in 
               <i>
-                <b className="purple"> Python, React, C++, and JavaScript. </b>
+                <b className="purple"> Python, React, C++, and JavaScript. I specifically have had a ton of experience with PyTorch, Tensorflow for computer vision and Wireshark and socket programming for network security.  </b>
               </i>
               <br />
               <br />
               The fields that I am most interested in are&nbsp;
               <i>
-                <b className="purple">Machine Learning, Cybersecurity, and Quantitative Finance
+                <b className="purple">Machine Learning, Cybersecurity/network security, and Quantitative Finance
                 </b>
               </i>
               <br />
               <br />
-              Recently, I have been diving deep into deep learning ;) <b className="purple">and its applications in neurtechnology</b> as well as
+              Recently, I have been diving deep into deep learning ;) <b className="purple">and its applications in computer vision</b> as well as
               <i>
                 <b className="purple">
                   {" "}
-                  deep neural networks for LLM security. Through these, I was able to explore technologies
+                  deep neural networks for LLM security and offensive attacks. Through these, I was able to explore technologies
                 </b>
               </i>
               &nbsp; like
               <i>
-                <b className="purple"> PyTorch, Kali Linux, and Tensorflow.</b>
+                <b className="purple"> PyTorch, Kali Linux, Tensorflow, Metasploit, and AWS.</b>
               </i>
             </p>
           </Col>
