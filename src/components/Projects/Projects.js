@@ -7,6 +7,8 @@ import quizzical from "../../Assets/Projects/QuizzicalPic.jpg";
 import EnigmaCoin from "../../Assets/Projects/EnigmaCoin.png";
 import neurotech from "../../Assets/Projects/Neurotech.webp";
 import WordPlay from "../../Assets/Projects/WordPlay.png";
+import courtchecklogo from "../../Assets/Projects/courtchecklogo.png";
+import memonitorlogo from "../../Assets/Projects/MeMonitorLogo.png";
 
 function Projects() {
   return (
@@ -20,6 +22,29 @@ function Projects() {
           Here are my most recent projects.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={courtchecklogo}
+              isBlog={false}
+              title="CourtCheck"
+              description="CourtCheck leverages advanced computer vision techniques to accurately track tennis ball movements and court boundaries in tennis matches. This project aims to provide real-time insights and automated decision-making in tennis, reducing human error and enhancing the accuracy of in/out calls. CourtCheck integrates Python, machine learning, and computer vision to create a seamless and efficient system for tennis match analysis."
+              ghLink="https://github.com/AggieSportsAnalytics/CourtCheck"
+              // demoLink="https://github.com/Mohnish2004/EnigmaCoin"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={memonitorlogo}
+              isBlog={false}
+              title="MeMonitor"
+              description=" Designed and implemented network monitoring system using Python and dpkt library to analyze 500+ network packets, enhancing visibility into network traffic. Developed TCP proxy server and UDP client-server architecture to facilitate message routing and measure throughput for 100 MB batches of data transfer, optimizing network performance and response time"
+              ghLink="https://github.com/Harsh-Karia/ProjectsPublic"
+              // demoLink="https://github.com/Mohnish2004/EnigmaCoin"
+            />
+          </Col>
+          
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={EnigmaCoin}
