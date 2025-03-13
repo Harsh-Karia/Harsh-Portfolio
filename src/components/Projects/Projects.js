@@ -9,6 +9,7 @@ import neurotech from "../../Assets/Projects/Neurotech.webp";
 import WordPlay from "../../Assets/Projects/WordPlay.png";
 import courtchecklogo from "../../Assets/Projects/courtchecklogo.png";
 import memonitorlogo from "../../Assets/Projects/MeMonitorLogo.png";
+import AviaImg from "../../Assets/Projects/AviaImg.png";
 
 function Projects() {
   return (
@@ -25,12 +26,23 @@ function Projects() {
           
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={AviaImg}
+              isBlog={false}
+              title="Project AVIA"
+              description="Project AVIA is an AI-driven command center that consolidates real-time biometric data—heart rate, heart rate variability, oxygen saturation (SpO2), sleep quality, stress levels, exercise, and estimated blood pressure—sourced from Terra API and PPG recordings. Our command center has comprehensive insights into a pilot’s health and performance, enabling leadership to make informed, data-driven decisions."
+              ghLink="https://github.com/Harsh-Karia/TreeHacks"
+              // demoLink=""
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={courtchecklogo}
               isBlog={false}
               title="CourtCheck"
               description="CourtCheck leverages advanced computer vision techniques to accurately track tennis ball movements and court boundaries in tennis matches. This project aims to provide real-time insights and automated decision-making in tennis, reducing human error and enhancing the accuracy of in/out calls. CourtCheck integrates Python, machine learning, and computer vision to create a seamless and efficient system for tennis match analysis."
               ghLink="https://github.com/AggieSportsAnalytics/CourtCheck"
-              // demoLink="https://github.com/Mohnish2004/EnigmaCoin"
+              // demoLink=""
             />
           </Col>
 
