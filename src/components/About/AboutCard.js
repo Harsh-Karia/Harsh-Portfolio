@@ -20,12 +20,12 @@ function AboutCard() {
               fullstack development, using Python, Selenium, React, TypeScript, and JavaScript. Currently I am conducting research on the security and privacy vulnerabilities of GenAI browser extensions
               using MITMproxy and packet sniffing.<br></br>
             <br />
-            <br>
+            
             I am also part of a few clubs on campus such as CodeLab, where I am using next.js, PyTorch, and openAI models to create an AI-based interview preparation tool for college students. 
             At Aggie Sports Analytics, I am working on creating a comprehensive tool for the UC Davis Tennis teams to understand play patterns of players and their opponents. This is being done through ball tracking, court detection, player pose detection, and game analysis automation. 
             For this, I am mainly using PyTorch along with react, AWS, and the Detectron2 model.
-            </br>
             
+            <br />
             Apart from coding, some other activities that I love to do!
           </p>
           <ul>
