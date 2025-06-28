@@ -1,52 +1,115 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
+import { Container, Row, Col } from "react-bootstrap";
 import { ImPointRight } from "react-icons/im";
 
 function AboutCard() {
   return (
-    <Card className="quote-card-view">
-      <Card.Body>
-        <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
-            Hi. My name is <span className="purple">Harsh Karia and I am </span>
-            from <span className="purple"> the Bay Area.</span>
-            <br />
-            I am an aspiring software engineer and entrepreneur. I currently study CSE at UC Davis
-              with a concentration in AI/ML and security. I am particularly fascinated with deep learning and its many applications but I am most intrigued by
-              DL applications within cybersecurity and quantitative finance. Being an avid hackathon enthusiast, some of my proudest projects have been built in hackathons.
-              I recently built out Project AVIA (winning 2nd place at Stanford TreeHacks in healthcare), an AI tool to help detect when pilots are at risk of blacking out and automatically giving plane control to the command center or a backup pilot.
-              I have also built a study tool for students at CalHacks 10.0, a natural language based Gen-AI game to help elementary students learn vocabulary
-              quickly at HackMIT and a non-invasive glucose checking device at HackDavis 2024. I have also done a few internships in automation engineering and
-              fullstack development, using Python, Selenium, React, TypeScript, and JavaScript. Currently I am conducting research on the security and privacy vulnerabilities of GenAI browser extensions
-              using MITMproxy and packet sniffing.<br></br>
-            <br />
-            
-            I am also part of a few clubs on campus such as CodeLab, where I am using next.js, PyTorch, and openAI models to create an AI-based interview preparation tool for college students. 
-            At Aggie Sports Analytics, I am working on creating a comprehensive tool for the UC Davis Tennis teams to understand play patterns of players and their opponents. This is being done through ball tracking, court detection, player pose detection, and game analysis automation. 
-            For this, I am mainly using PyTorch along with react, AWS, and the Detectron2 model.
-            
-            <br />
-            Apart from coding, some other activities that I love to do!
+    <Container>
+      {/* Personal Introduction Section */}
+      <div className="about-intro-section">
+        <h2 className="section-title">About Me</h2>
+        <p style={{ textAlign: "center", fontSize: "1.3em", lineHeight: "1.8", color: "rgba(255, 255, 255, 0.9)" }}>
+          Hi! I'm <span className="purple">Harsh Karia</span>, an aspiring software engineer and entrepreneur from
+          <span className="purple"> the Bay Area</span>. Currently pursuing CSE at UC Davis with a concentration in AI/ML and security.
+        </p>
+        <div style={{ textAlign: "center", marginTop: "25px" }}>
+          <p style={{ color: "rgb(155 126 172)", fontStyle: "italic", fontSize: "1.2em", fontWeight: "500" }}>
+            "Hacker. Tinkerer. Changemaker"
           </p>
-          <ul>
-            <li className="about-activity">
-              <ImPointRight /> Playing sports (Tennis, Volleyball, Basketball)
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Reading (Science fiction, philosophy, and psychology)
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Stock Market Trading
-            </li>
-          </ul>
+        </div>
+      </div>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Hacker. Tinkerer. Changemaker"{" "}
+      {/* Experience and Projects Grid */}
+      <div className="about-experience-grid">
+        <div className="about-experience-card">
+          <h3>🚀 Current Focus</h3>
+          <p style={{ textAlign: "justify", lineHeight: "1.6", color: "rgba(255, 255, 255, 0.9)", fontSize: "1.05em" }}>
+            I'm particularly fascinated by <strong className="purple">deep learning and its applications</strong> — especially in cybersecurity and quantitative finance. 
           </p>
-          <footer className="blockquote-footer">Harsh</footer>
-        </blockquote>
-      </Card.Body>
-    </Card>
+          <p style={{ textAlign: "justify", lineHeight: "1.6", color: "rgba(255, 255, 255, 0.85)", fontSize: "1.05em", marginTop: "10px" }}>
+            Currently researching GenAI browser extension vulnerabilities with MITMproxy and LLM memory management security.
+          </p>
+        </div>
+
+        <div className="about-experience-card">
+          <h3>🏆 Hackathon Achievements</h3>
+          <div style={{ color: "rgba(255, 255, 255, 0.9)", lineHeight: "1.6" }}>
+            <div style={{ marginBottom: "8px", padding: "4px 0" }}>
+              <strong className="purple">Project AVIA</strong> – 2nd place at Stanford TreeHacks
+              <div style={{ fontSize: "0.95em", color: "rgba(255, 255, 255, 0.75)", marginTop: "2px" }}>
+                Pilot blackout detection with auto-transfer control
+              </div>
+            </div>
+            <div style={{ marginBottom: "8px", padding: "4px 0" }}>
+              <strong className="purple">Vocabulary Learning Game</strong> – HackMIT
+              <div style={{ fontSize: "0.95em", color: "rgba(255, 255, 255, 0.75)", marginTop: "2px" }}>
+                GenAI-powered educational platform
+              </div>
+            </div>
+            <div style={{ padding: "4px 0" }}>
+              <strong className="purple">Glucose Monitor</strong> – HackDavis 2024
+              <div style={{ fontSize: "0.95em", color: "rgba(255, 255, 255, 0.75)", marginTop: "2px" }}>
+                Non-invasive monitoring solution
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="about-experience-card">
+          <h3>💼 Professional Experience</h3>
+          <p style={{ textAlign: "justify", lineHeight: "1.6", color: "rgba(255, 255, 255, 0.9)", fontSize: "1.05em" }}>
+            Experienced in <strong className="purple">automation engineering and full-stack development</strong> with Python, Selenium, React, TypeScript, and JavaScript.
+          </p>
+          <p style={{ textAlign: "justify", lineHeight: "1.6", color: "rgba(255, 255, 255, 0.85)", fontSize: "1.05em", marginTop: "10px" }}>
+            Background spans web development, mobile apps, and cybersecurity research across multiple internships.
+          </p>
+        </div>
+
+        <div className="about-experience-card">
+          <h3>🎯 Current Involvement</h3>
+          <div style={{ lineHeight: "1.6", color: "rgba(255, 255, 255, 0.9)", fontSize: "1.05em" }}>
+            <div style={{ marginBottom: "10px" }}>
+              <strong className="purple">CodeLab</strong>
+              <div style={{ fontSize: "0.95em", color: "rgba(255, 255, 255, 0.8)", marginTop: "2px" }}>
+                Building AI interview prep tool with Next.js and PyTorch
+              </div>
+            </div>
+            <div>
+              <strong className="purple">Aggie Sports Analytics</strong>
+              <div style={{ fontSize: "0.95em", color: "rgba(255, 255, 255, 0.8)", marginTop: "2px" }}>
+                Computer vision tennis analysis with Detectron2, AWS, and React
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Hobbies and Interests Section */}
+      <div className="about-hobbies-section">
+        <h3 style={{ color: "var(--imp-text-color)", textAlign: "center", marginBottom: "25px", fontSize: "1.6em" }}>
+          Beyond Coding
+        </h3>
+        <p style={{ textAlign: "center", color: "rgba(255, 255, 255, 0.8)", marginBottom: "30px" }}>
+          When I'm not building the next big thing, you can find me:
+        </p>
+        
+        <div className="about-hobbies-grid">
+          <div className="hobby-item">
+            <ImPointRight />
+            <span>Playing sports (Tennis, Volleyball, Basketball)</span>
+          </div>
+          <div className="hobby-item">
+            <ImPointRight />
+            <span>Reading (Science fiction, philosophy, and psychology)</span>
+          </div>
+          <div className="hobby-item">
+            <ImPointRight />
+            <span>Stock Market Trading</span>
+          </div>
+        </div>
+      </div>
+    </Container>
   );
 }
 

@@ -17,11 +17,12 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          What I am working <strong className="purple">on </strong>
+          Recent <strong className="purple">Projects</strong>
         </h1>
-        <p style={{ color: "white" }}>
-          Here are my most recent projects.
+        <p className="section-subtitle">
+          Here are some of my latest creations that showcase my passion for innovation and problem-solving.
         </p>
+        
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           
           <Col md={4} className="project-card">
@@ -29,9 +30,8 @@ function Projects() {
               imgPath={AviaImg}
               isBlog={false}
               title="Project AVIA"
-              description="Project AVIA is an AI-driven command center that consolidates real-time biometric data—heart rate, heart rate variability, oxygen saturation (SpO2), sleep quality, stress levels, exercise, and estimated blood pressure—sourced from Terra API and PPG recordings. Our command center has comprehensive insights into a pilot’s health and performance, enabling leadership to make informed, data-driven decisions."
+              description="🏆 2nd Place at Stanford TreeHacks. An AI-driven command center that consolidates real-time biometric data—heart rate, HRV, SpO2, sleep quality, stress levels, and estimated blood pressure—to provide comprehensive insights into pilot health and performance for data-driven decision making."
               ghLink="https://github.com/Harsh-Karia/TreeHacks"
-              // demoLink=""
             />
           </Col>
 
@@ -40,42 +40,8 @@ function Projects() {
               imgPath={courtchecklogo}
               isBlog={false}
               title="CourtCheck"
-              description="CourtCheck leverages advanced computer vision techniques to accurately track tennis ball movements and court boundaries in tennis matches. This project aims to provide real-time insights and automated decision-making in tennis, reducing human error and enhancing the accuracy of in/out calls. CourtCheck integrates Python, machine learning, and computer vision to create a seamless and efficient system for tennis match analysis."
+              description="Advanced computer vision system for tennis match analysis. Leverages ML algorithms to accurately track tennis ball movements and court boundaries, providing real-time insights and automated decision-making to reduce human error in tennis officiating."
               ghLink="https://github.com/AggieSportsAnalytics/CourtCheck"
-              // demoLink=""
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={memonitorlogo}
-              isBlog={false}
-              title="MeMonitor"
-              description=" Designed and implemented network monitoring system using Python and dpkt library to analyze 500+ network packets, enhancing visibility into network traffic. Developed TCP proxy server and UDP client-server architecture to facilitate message routing and measure throughput for 100 MB batches of data transfer, optimizing network performance and response time"
-              ghLink="https://github.com/Harsh-Karia/ProjectsPublic"
-              // demoLink="https://github.com/Mohnish2004/EnigmaCoin"
-            />
-          </Col>
-          
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={EnigmaCoin}
-              isBlog={false}
-              title="Enigma Coin"
-              description="Enigma Coin is a blockchain-based cryptocurrency project developed from scratch using Python. The aim of this project was to explore the application of RSA encryption in blockchain technology. We created our own blockchain with RSA encryption and implemented various functionalities like mining, transactions, and coin buying. In addition, we developed a web platform to showcase the functioning of the Enigma Coin."
-              ghLink="https://github.com/Mohnish2004/EnigmaCoin"
-              // demoLink="https://github.com/Mohnish2004/EnigmaCoin"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={neurotech}
-              isBlog={false}
-              title="CerebralSecure"
-              description="BCI Lock System employs a combination of jaw clenches, focus levels, and eye blinks by analyzing patterns derived from these inputs, the system can accurately identify an authorized user and grant or deny access accordingly."
-              ghLink="https://github.com/Neurotech-Davis/CerebralSecure"
-              // demoLink="https://github.com/Neurotech-Davis/CerebralSecure"
             />
           </Col>
 
@@ -84,20 +50,28 @@ function Projects() {
               imgPath={WordPlay}
               isBlog={false}
               title="WordPlay"
-              description="WordPlay is an AI-powered platformer game that turns dull vocabulary lessons into interactive learning experiences, where students can use their imagination to bring their ideas to life in-game, creating endless possibilities for creative exploration and problem-solving as they engage with educational concepts in dynamic and playful ways."
+              description="🎮 AI-powered educational platformer game that transforms vocabulary learning into interactive experiences. Students use creativity and imagination to bring ideas to life in-game, creating endless possibilities for educational exploration and problem-solving."
               ghLink="https://github.com/WordPlayEducation"
-              // demoLink="https://github.com/SacHacks5-0/App"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={quizzical}
+              imgPath={EnigmaCoin}
               isBlog={false}
-              title="Quizzical"
-              description="Quizzical is the perfect tool to use while studying. Simply upload your lecture notes, slides, or lecture recordings. Our efficient algorithm will scrape all of the relevant information from the uploaded files and generate custom flashcards for you to practice along with all the main points gathered from the file."
-              ghLink="https://github.com/Harsh-Karia/file_to_flashcard"
-              // demoLink="https://github.com/Harsh-Karia/file_to_flashcard"              
+              title="Enigma Coin"
+              description="Custom blockchain-based cryptocurrency built from scratch with Python. Features RSA encryption implementation, mining capabilities, transaction processing, and coin trading system. Includes a comprehensive web platform showcasing blockchain functionality."
+              ghLink="https://github.com/Mohnish2004/EnigmaCoin"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={neurotech}
+              isBlog={false}
+              title="CerebralSecure"
+              description="Innovative BCI (Brain-Computer Interface) security system that uses jaw clenches, focus levels, and eye blinks for user authentication. Advanced pattern recognition algorithms analyze biometric inputs to accurately identify authorized users."
+              ghLink="https://github.com/Neurotech-Davis/CerebralSecure"
             />
           </Col>
 
@@ -106,12 +80,30 @@ function Projects() {
               imgPath={finguard}
               isBlog={false}
               title="FinGuard"
-              description="FinGuard is a comprehensive platform tailored to guide recent college graduates and young professionals on their financial journey. Upon entering the platform, users can easily create an account, granting them access to our powerful financial tools. The centerpiece of FinGuard is our Loan Eligibility Predictor, which empowers users to gauge their eligibility for loans by inputting various factors like income, marital status, education, and loan terms."
+              description="Comprehensive financial guidance platform for recent graduates and young professionals. Features an advanced Loan Eligibility Predictor using ML algorithms to assess loan approval chances based on income, education, and financial factors."
               ghLink="https://github.com/SacHacks5-0/App"
-              // demoLink="https://github.com/SacHacks5-0/App"
             />
           </Col>
 
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={memonitorlogo}
+              isBlog={false}
+              title="MeMonitor"
+              description="Comprehensive network monitoring system using Python and dpkt library. Analyzes 500+ network packets for enhanced traffic visibility, featuring TCP proxy server and UDP client-server architecture for optimized data transfer and performance monitoring."
+              ghLink="https://github.com/Harsh-Karia/ProjectsPublic"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={quizzical}
+              isBlog={false}
+              title="Quizzical"
+              description="Intelligent study companion that transforms lecture materials into custom flashcards. Upload notes, slides, or recordings and our efficient algorithm extracts relevant information to generate personalized study materials with key concepts highlighted."
+              ghLink="https://github.com/Harsh-Karia/file_to_flashcard"           
+            />
+          </Col>
 
         </Row>
       </Container>

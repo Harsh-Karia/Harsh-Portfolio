@@ -13,26 +13,32 @@ function ProjectCards(props) {
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
-        </Button>
-        {"\n"}
-        {"\n"}
-
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
-
-        {/* {!props.isBlog && props.demoLink && (
-          <Button
-            variant="primary"
-            href={props.demoLink}
+        
+        <div className="project-card-buttons">
+          <Button 
+            variant="primary" 
+            href={props.ghLink} 
             target="_blank"
-            style={{ marginLeft: "10px" }}
+            className="project-btn"
           >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
+            <BsGithub />
+            {props.isBlog ? "Blog" : "GitHub"}
           </Button>
-        )} */}
+          
+          {!props.isBlog && props.demoLink && (
+            <Button
+              variant="primary"
+              href={props.demoLink}
+              target="_blank"
+              className="project-btn"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+              </svg>
+              Demo
+            </Button>
+          )}
+        </div>
       </Card.Body>
     </Card>
   );
