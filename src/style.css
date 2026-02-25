@@ -1405,6 +1405,24 @@ button:focus {
   border-top: 1px solid rgba(199, 112, 240, 0.2) !important;
 }
 
+.timeline-bullets {
+  color: rgba(255, 255, 255, 0.85) !important;
+  line-height: 1.6 !important;
+  font-size: 0.95em !important;
+  margin: 0 !important;
+  padding: 10px 0 0 20px !important;
+  border-top: 1px solid rgba(199, 112, 240, 0.2) !important;
+  list-style-type: disc !important;
+}
+
+.timeline-bullets li {
+  margin-bottom: 8px !important;
+}
+
+.timeline-bullets li:last-child {
+  margin-bottom: 0 !important;
+}
+
 /* Mobile responsiveness for timeline */
 @media (max-width: 768px) {
   .timeline-container::before {

@@ -1,9 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
-import Github from "./Github";
 import Techstack from "./Techstack";
-import Aboutcard from "./AboutCard";
 import Toolstack from "./Toolstack";
 import treehacksImg from "../../Assets/Tree_hacks_group_pic.jpg";
 import asaImg from "../../Assets/ASA_presentation.JPG";
@@ -100,15 +98,6 @@ function About() {
           </Col>
         </Row>
 
-        {/* GitHub Activity Section */}
-        <Row style={{ justifyContent: "center", marginTop: "60px" }}>
-          <Col md={12}>
-            <h1 className="project-heading">
-              Days I <strong className="purple">Code</strong>
-            </h1>
-            <Github />
-          </Col>
-        </Row>
       </Container>
     </Container>
   );

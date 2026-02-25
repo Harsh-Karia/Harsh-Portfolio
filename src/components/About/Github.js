@@ -9,17 +9,14 @@ function Github() {
         username="Harsh-Karia"
         blockSize={15}
         blockMargin={5}
-        color="#c084f5"
         fontSize={16}
         showWeekdayLabels={true}
         theme={{
-          background: 'transparent',
-          text: '#ffffff',
-          grade4: '#c770f0',
-          grade3: '#a855f7',
-          grade2: '#8b5cf6',
-          grade1: '#7c3aed',
-          grade0: 'rgba(255, 255, 255, 0.1)',
+          level4: '#c770f0',
+          level3: '#a855f7',
+          level2: '#8b5cf6',
+          level1: '#7c3aed',
+          level0: 'rgba(255, 255, 255, 0.1)',
         }}
         style={{
           color: '#ffffff'

@@ -15,6 +15,10 @@ import {
   SiPytorch,
   SiTensorflow,
   SiDocker,
+  SiScala,
+  SiAmazonaws,
+  SiGooglecloud,
+  SiKubernetes,
 } from "react-icons/si";
 // import { deviconPytorchPlain } from 'react-icons-kit/devicon/devicon-pytorch-plain';
 
@@ -64,14 +68,23 @@ function Techstack() {
       {/* <Col xs={4} md={2} className="tech-icons">
         <SiFirebase />
       </Col> */}
-      {/* <Col xs={4} md={2} className="tech-icons">
-        <SiAmazonaws />
-      </Col> */}
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiDocker />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiScala />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiAmazonaws />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiGooglecloud />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiKubernetes />
       </Col>
     </Row>
   );

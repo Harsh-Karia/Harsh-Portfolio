@@ -7,6 +7,7 @@ import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
 import Tilt from "react-parallax-tilt";
+import Github from "../About/Github";
 
 function Home() {
   return (
@@ -42,6 +43,18 @@ function Home() {
                   style={{ maxHeight: "450px" }}
                 />
               </Tilt>
+            </Col>
+          </Row>
+        </Container>
+      </Container>
+      <Container fluid className="home-about-section">
+        <Container>
+          <Row style={{ justifyContent: "center", marginTop: "60px" }}>
+            <Col md={12}>
+              <h1 className="project-heading">
+                Days I <strong className="purple">Code</strong>
+              </h1>
+              <Github />
             </Col>
           </Row>
         </Container>
